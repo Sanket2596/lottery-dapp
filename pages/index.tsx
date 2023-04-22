@@ -28,6 +28,20 @@ const Home: NextPage = () => {
         <title>CRYPTO LOTTERY DRAW</title>
       </Head>
       <Header/>
+      <div>
+        <div>
+          <h1>The Next Draw</h1>
+        </div>
+        <div>
+          <h2>Total Pool</h2>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          
+        </div>
+      </div>
     </div>
   )
 }
