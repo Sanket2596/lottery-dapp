@@ -15,7 +15,7 @@ function Header() {
         <div className='flex space-x-5 items-center'>
             <img className="rounded-full h-10 w-10 space-x-10" src="https://insidebitcoins.com/wp-content/uploads/2019/09/bitcoin-loterryyy.png" alt="Image Not Found!" />
         <div >
-            <h1 className='text-lg text-white font-bolds'>CRYPTOCREW DIGITAL DRAW</h1>
+            <h1 className='text-lg text-white font-bolds'>DIGITAL DRAW</h1>
             <p className='text-xs text-emerald-400 truncate'>
                 User:{address?.substring(0, 5)}...
                 {address?.substring(address.length, address.length - 5)}
