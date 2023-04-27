@@ -11,7 +11,7 @@ import { currency } from '../constants';
 
 import { ethers } from 'ethers';
 
-import toast from 'react-hot-toast';
+import toast from 'react-hot-toast'
 
 
 function AdminControls() {

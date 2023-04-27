@@ -5,8 +5,6 @@ import Login from '../components/Login';
 import { 
   useContract,
   useContractRead,
-  useMetamask,
-  useDisconnect,
   useAddress,
   useContractWrite,
 } from '@thirdweb-dev/react';
@@ -15,8 +13,9 @@ import Loading from '../components/Loading';
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import { currency } from '../constants';
+
 import CountdownTimer from '../components/CountdownTimer';
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import Marquee from "react-fast-marquee";
 import AdminControls from '../components/AdminControls';
 
@@ -127,8 +126,7 @@ const Home: NextPage = () => {
       </Head>
       {/* <div className='flex-1'></div> */}
       <Header/>
-      <Marquee className="bg-[#0A1F1C] p-5 mb-5" gradient={false}
-      speed={100}>
+      <Marquee className="bg-[#0A1F1C] p-5 mb-5" gradient={false} speed={100}>
         <div className="flex space-x-2 mx-10">
           <h4 className="text-white font-bold">Last Winner: {lastWinner?.toString()}</h4>
           <h4 className="text-white font-bold">Previous Winnings: {" "}
@@ -141,7 +139,8 @@ const Home: NextPage = () => {
 
       {isLotteryOperator === address && (
         <div className="flex justify-center">
-          <AdminControls />
+          <AdminControls/>
+          <Toaster/>
         </div>
       )}
 
