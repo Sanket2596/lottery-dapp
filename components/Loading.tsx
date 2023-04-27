@@ -1,6 +1,5 @@
 import CircleLoader from 'react-spinners/CircleLoader';
 import React from 'react';
-import { useEffect } from 'react';
 
 function Loading() {
     

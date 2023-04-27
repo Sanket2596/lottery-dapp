@@ -2,12 +2,11 @@ import React from 'react'
 import NavButton from './NavButton'
 import {Bars3BottomRightIcon} from '@heroicons/react/24/solid';
 import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react';
-import { disconnect } from 'process';
+
 
 function Header() {
 
   const address = useAddress();
-  const connectWithMetaMask = useMetamask();
   const disconenctWallet = useDisconnect();
   
   return (

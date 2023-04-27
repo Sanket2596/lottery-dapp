@@ -1,6 +1,4 @@
 import React from 'react'
-import { useAddress, useMetamask, useDisconnect } from '@thirdweb-dev/react';
-
 
 interface Props {
     title: String;
@@ -9,9 +7,6 @@ interface Props {
 }
 
 function NavButton({ title, isActive, onClick }: Props) {
-//   const address = useAddress();
-//   const connectWithMetaMask = useMetamask();
-//   const disconenctWallet = useDisconnect();
   
   return <button 
   onClick={onClick} 
