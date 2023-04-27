@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   const address = useAddress();
   const [userTickets, setUserTickets] = useState(0);
   const [quantity, setQuantity] = useState<number>(1);
-  //console.log(address);
+
   const {contract, isLoading } = useContract(process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS);
   const { data: expiration } = useContractRead(
     contract,
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
   },[tickets,address]);
   console.log(userTickets);
 
-  const handleClick =async () => {
+  const handleClick = async () => {
     if (!ticketPrice) return;
 
     const notification = toast.loading("Buying your tickets...");
